@@ -21,7 +21,7 @@ spec:
   destination:
     namespace: default
     server: 'https://kubernetes.default.svc'
-  project: argo-test
+  project: argo-test-2
   source: 
     repoURL: oci://ghcr.io/mohammad-ammar14/backend-chart:0.1.0 
 #    targetRevision: "*"
