@@ -10,6 +10,7 @@ spec:
   project: argo-test-2
   source: 
     repoURL: oci://ghcr.io/mohammad-ammar14/backend-chart:0.1.0 
+    chart: backend-chart
 #     repoURL: oci://ghcr.io/mohammad-ammar14/backend-chart:0.1.0 
 # #    targetRevision: "*"
 #     chart: backend-chart
