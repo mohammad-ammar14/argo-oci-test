@@ -16,14 +16,15 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: backend
+  namespace: argocd
 spec:
   destination:
     namespace: default
     server: 'https://kubernetes.default.svc'
   project: argo-test
-  source:
+  source: 
     repoURL: oci://ghcr.io/mohammad-ammar14/backend-chart:0.1.0 
-    targetRevision: "*"
+#    targetRevision: "*"
     chart: backend-chart
 
 
