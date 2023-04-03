@@ -1,17 +1,3 @@
-
-# apiVersion: argoproj.io/v1alpha1
-# kind: Application
-# metadata:
-#   name: podinfo
-#   namespace: argocd
-# spec:
-#   destination:
-#     namespace: default
-#     server: https://kubernetes.default.svc
-#   project: podinfo
-#   source:
-#     name: backend-chart
-#    repoURL: oci://ghcr.io/mohammad-ammar14/backend-chart:0.1.0 
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -19,12 +5,13 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: default
+    namespace: argocd
     server: 'https://kubernetes.default.svc'
   project: argo-test-2
   source: 
     repoURL: oci://ghcr.io/mohammad-ammar14/backend-chart:0.1.0 
-#    targetRevision: "*"
-    chart: backend-chart
+#     repoURL: oci://ghcr.io/mohammad-ammar14/backend-chart:0.1.0 
+# #    targetRevision: "*"
+#     chart: backend-chart
 
 
